@@ -1,0 +1,1 @@
+document.write("<p>JavaScript is a client side scripting language which uses DOM model and adds interactivity to our webpages JavaScript has evolved over the years and used in many environments which include from web pages to machine learning</p>");
