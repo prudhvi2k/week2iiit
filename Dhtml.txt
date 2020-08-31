@@ -1,0 +1,3 @@
+Dynamic HTML or DHTML refers to a combination of regular HTML and various programming languages to increase a web page's interactivity. Good examples are drag-and-drop features and drop-down menus that appear when a user moves their mouse over a certain section of the page.
+Dhtml is different from html where dhtml uses html,jas,css, adn DOM. it is used for real time positioning. it makes webpage dynamic and also helpful in creating animations,games and applications. DHTML can change the content of a webpage on demand without erasing everything else.
+Disadvantages of DHTML include supporting very few browsers and complexity in cross platform, need few expensive tools like DHTML text editor and Dreamweaver and also cost of transferring from HTML to DHTML is very high.
