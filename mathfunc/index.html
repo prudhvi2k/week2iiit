@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- /*power,sqrt,abs value. also print random number,ceilit,round
+    it,floor it and also run trignometric function.*/ -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p>Power of 2 and 3</p>
+    <p id="pow"></p>
+    <p>Square Root of 25</p>
+    <p id="sqrt"></p>
+    <p>Absolute value of -5.6</p>
+    <p id="absv"></p>
+    <p>Random Number</p>
+    <p id="rand"></p>
+    <p>ceil of random number</p>
+    <p id="ceil"></p>
+    <p>round of random number</p>
+    <p id="round"></p>
+    <p>floor of Random Number</p>
+    <p id="floor"></p>
+    <p>cos value of 0</p>
+    <p id="trigno"></p>
+    <script>
+        document.getElementById("pow").innerHTML = Math.pow(2,3);
+        document.getElementById("sqrt").innerHTML = Math.sqrt(25);
+        document.getElementById("absv").innerHTML = Math.abs(-5.6);
+        var x = Math.random()
+        document.getElementById("rand").innerHTML = x;
+        document.getElementById("ceil").innerHTML= Math.ceil(x);
+        document.getElementById("round").innerHTML= Math.round(x);
+        document.getElementById("floor").innerHTML= Math.floor(x);
+        document.getElementById("trigno").innerHTML=Math.cos(0 * Math.PI / 180);
+    </script>
+</body>
+</html>
