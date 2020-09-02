@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prudhvi Raju</title>
+<style>
+table,th,td {
+border: 1px solid black;
+border-collapse: collapse;
+table-layout: fixed;
+outline-style:solid;
+}
+th {
+  text-align: left;
+}
+[class|="top"] {
+  background: yellow;
+}
+img{
+float:left;
+width:75px;
+height:75px;
+}
+h2{
+padding:20px
+}
+
+td:last-child{
+	text-align:right;
+	}
+th:last-child{
+	text-align:right;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+</style>
+</head>
+<body>
+<div class = "headdiv">
+<h2><img src = "http://placements.iiit.ac.in/assets/images/iiit-new.png" alt = "iiit logo">Prudhvi Raju Saripella</h2>
+<h3>JNTU,Kakinda</h3>
+<h4><a href = "courses.html">Computer Science Engineering</a></h4>
+</div>
+<h2> Marksheet </h2>
+<table id ="table">
+	<tr>
+		<th>Subject</th>
+		<th>Marks</th>
+	</tr>
+	<tr>
+		<td>Java</td>
+		<td>75</td>
+	</tr>
+	<tr>
+		<td>Python</td>
+		<td>60</td>
+	</tr>
+	<tr>
+		<td>C</td>
+		<td>63</td>
+    </tr>
+    <tr>
+        <td>Total</td>
+        <td id="totval"></td>
+    </tr>
+    <tr>
+        <td>Average</td>
+        <td id="aveg"></td>
+    </tr>
+</table>
+<br>
+</body>
+</html>
+<script>
+    var table = document.getElementById("table"), sumVal = 0,avg=0;
+    getSum();
+    getAvg();
+    function getSum(){
+        for(var i = 1; i < table.rows.length-2; i++){
+            sumVal = sumVal + parseInt(table.rows[i].cells[1].innerHTML);
+        }
+        document.getElementById("totval").innerHTML = +sumVal;
+        }
+        function getAvg(){
+            var avg = sumVal /(table.rows.length - 3);
+            document.getElementById("aveg").innerHTML =+parseInt(avg);
+        }
+</script>
