@@ -7,30 +7,38 @@
 </head>
 <body>
     <h1>Fibonacci Series...</h1>
+    <p id="p01"></p>
 </body>
 </html>
 <script>
         var var1 = 0;
         var var2 = 1;
         var var3;
+        var message;
+        message=document.getElementById("p01");
+        message.innerHTML=""
         var num = prompt("Enter the limit to generate fibonacci no",0);
-        if(num>10 && num<100){
- 
-		document.write("<h2>"+var1+"</h2>");
-		document.write("<h2>"+var2+"</h2>");
- 
+        try {
+            if(num>10 && num<100){
+                document.write("<h2>"+var1+"</h2>");
+                document.write("<h2>"+var2+"</h2>");
+                for (var i=3; i<=num; i++){
+                    var3 = var1 + var2;
+                    var1 = var2;
+                    var2 = var3;
+                    document.write("<h2>"+var3+"</h2>");
+                }
+            }
+            else if(num<10) throw "wrong limit";
+            else throw "input is high";
 
-        for (var i=3; i<=num; i++){
-            var3 = var1 + var2;
-            var1 = var2;
-            var2 = var3;
-            document.write("<h2>"+var3+"</h2>");
+            }
+        catch(err) {s
+            message.innerHTML = +err;
         }
-        }
-        else{
-            document.write("<h4>enter value between 10 and 100</h4>")
+        finally{
+            document.write("<h3>Thanks for executing</h3>")
         }
     
-        
-        
+                
 </script>
