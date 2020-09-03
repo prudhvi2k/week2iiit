@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fibonacci Series...</h1>
+</body>
+</html>
+<script>
+        var var1 = 0;
+        var var2 = 1;
+        var var3;
+        var num = prompt("Enter the limit to generate fibonacci no",0);
+        if(num>10 && num<100){
+ 
+		document.write("<h2>"+var1+"</h2>");
+		document.write("<h2>"+var2+"</h2>");
+ 
+
+        for (var i=3; i<=num; i++){
+            var3 = var1 + var2;
+            var1 = var2;
+            var2 = var3;
+            document.write("<h2>"+var3+"</h2>");
+        }
+        }
+        else{
+            document.write("<h4>enter value between 10 and 100</h4>")
+        }
+    
+        
+        
+</script>
