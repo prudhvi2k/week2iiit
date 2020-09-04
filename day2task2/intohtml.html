@@ -1,14 +1,21 @@
 <html>
 <body>
-<h1>Information about Html</h1>
-<p ></p>
+<button id ="info1">Click to get HTML info</button>
+<button id="close">Close</button>
+<p id="para1" style="visibility: hidden;"> HTML is an abbreviation of Hyper text markup language. It is used to display the web pages. Html code is read by web browsers and displayed to users in an understandable format. It was invented by Tim-berners-lee in 1989. It consists of series of elements</p>
 </body>	
 </html>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script>
-    var str = "HTML is an abbreviation of Hyper text markup language. It is used to display the web pages. Html code is read by web browsers and displayed to users in an understandable format. It was invented by Tim-berners-lee in 1989. It consists of series of elements";
-    document.write(str);
-    var arrays = str.split(' ');
-    document.write("<h2>"+arrays[5]+"</h2>");
-    document.write("<h2>"+arrays[7]+"</h2>");
-    document.write("<h2>"+arrays[10]+"</h2>");
-    </script>
+    $("#info1").click(function(){
+        $("#para1").show("slow",function() {
+            $("#para1").css("visibility","visible");
+        });
+    });
+    $("#close").click(function(){
+        $("#para1").hide("slow",function() {
+            $("#para1").css("visibility","hidden");
+        });
+    });
+
+</script>
